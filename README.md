@@ -1,4 +1,4 @@
-# File Organizer
+# File Organiser
 
 This Python script helps you organize your cluttered files in a specified directory by categorizing them into folders based on their file extensions. It utilizes the Tkinter library for the graphical user interface (GUI) to select a folder for organization and the `os` and `pathlib` libraries for file manipulation.
 
