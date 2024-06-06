@@ -21,7 +21,7 @@ Directories = {
 
 FILE_FORMAT = {file_format: directory for directory, file_formats in Directories.items() for file_format in file_formats}
 
-def organize_junk(base):
+def organise_junk(base):
     for entry in os.scandir(base):
         if entry.is_dir():
             continue
@@ -43,12 +43,12 @@ def organize_junk(base):
             except OSError:
                 pass
 
-def select_folder_and_organize():
+def select_folder_and_organise():
     root = tk.Tk()
-    root.withdraw()  # Hide the main window
-    folder_path = filedialog.askdirectory(title="Select a folder to organize")
+    root.withdraw()  
+    folder_path = filedialog.askdirectory(title="Select a folder to organise")
     if folder_path:
-        organize_junk(folder_path)
+        organise_junk(folder_path)
 
 if __name__ == "__main__":
-    select_folder_and_organize()
+    select_folder_and_organise()
